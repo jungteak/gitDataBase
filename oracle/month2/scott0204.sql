@@ -232,7 +232,7 @@ drop index ind_emp_sal;
 
 
 --시퀀스 (번호 생성기) // 중복값을 피하기 위해서 사용
---create squence 시퀀스 이름
+--create sequence 시퀀스 이름
 --[increment by n] 증가값
 --[start with n] 시작값
 --[maxvalue n | nomaxvalue] 최대값

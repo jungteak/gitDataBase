@@ -1,6 +1,6 @@
 /*테이블 생성 create!
 create table 테이블명(
-    컬럼명 데이터타입 [제약조건],
+    컬럼명 데이터타입 [CONSTRAINT] 제약조건명 [제약조건], / 제약조건명은 보통 테이블명_컬럼명_제약조건
     컬럼명 데이터타입 [제약조건],
     .....
     컬럼명 데이터타입 [제약조건]
@@ -50,7 +50,7 @@ as select empno,ename,deptno from emp;
 
 select * from emp05;
 
---테이블 변경 alter
+--테이블 변경 alter >> add/ delete / modify / rename
 --테이블에 열 추가 하는 add
 alter table emp01 add(job varchar2(10));
 desc emp01;
@@ -154,6 +154,7 @@ create table emp004(
 insert into emp004 values (7499,'ALLEN','SALESMAN',30);
 
 --외부키
+--foreign key(컬럼명) references 테이블명 (컬럼명) on delete cascade(함께 삭제) / set null (null 로 set 해준다)
 create table dept_fk(
     
     deptno number(2),
