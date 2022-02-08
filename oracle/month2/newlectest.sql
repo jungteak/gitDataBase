@@ -37,15 +37,13 @@ REGDATE DATE,
 EMAIL VARCHAR2(200)
 );
 
-insert into notice values (1,'JDBC란 무엇인가?','newlec','aaa',sysdate,0,'');
+insert into notice values (256,'JDBC란 무엇인가?','newlec','aaa',sysdate,0,'');
 insert into notice values (2,'JDBC2란 무엇인가?','newlec','aaa',sysdate,0,'');
 insert into notice values (3,'JDBC3란 무엇인가?','newlec','aaa',sysdate,0,'');
 
 update notice set hit = 10 where id = 3;
 
 COMMIT;
-
-
 
 
 
